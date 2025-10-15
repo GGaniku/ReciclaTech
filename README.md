@@ -17,6 +17,6 @@ Você pode seguir o protótipo proposto no Figma (que servirá como referência)
     <li>O projeto precisa estar responsivo.</li>
     <li>O repositório deve estar disponível no GitHub.</li>
     <li>É importante incluir um link do projeto online, hospedado preferencialmente na Vercel.</li>
-
+</ul>
 
 <p><strong><br>Use sua criatividade, mas mantenha boas práticas de código e organização do projeto.</strong></p>
