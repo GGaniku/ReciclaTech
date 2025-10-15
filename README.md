@@ -19,4 +19,4 @@ Você pode seguir o protótipo proposto no Figma (que servirá como referência)
     <li>É importante incluir um link do projeto online, hospedado preferencialmente na Vercel.</li>
 
 
-<p><strong>Use sua criatividade, mas mantenha boas práticas de código e organização do projeto.</strong></p>
+<p><strong><br>Use sua criatividade, mas mantenha boas práticas de código e organização do projeto.</strong></p>
