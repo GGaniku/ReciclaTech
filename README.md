@@ -18,4 +18,5 @@ Você pode seguir o protótipo proposto no Figma (que servirá como referência)
     <li>O repositório deve estar disponível no GitHub.</li>
     <li>É importante incluir um link do projeto online, hospedado preferencialmente na Vercel.</li>
 
-Use sua criatividade, mas mantenha boas práticas de código e organização do projeto.
+
+<p><strong>Use sua criatividade, mas mantenha boas práticas de código e organização do projeto.</strong></p>
