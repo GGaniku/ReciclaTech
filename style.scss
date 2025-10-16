@@ -5,11 +5,55 @@
 }
 
 :root{
+    // cores
     --primary-color: #16A34A;
     --secondary-color: #2563EB;
     --title: #1F2937;
     --subtitle: #4B5563;
     --backgroung-box: #F3F5F8;
     --background: #F0FDF4;
+
+    // fontes
+    --font-p: 'Poppins', sans-serif, 16px;
+    --font-h1-h2: 'Poppins', sans-serif, 25px;
+    --font-h3: 'Inter', sans-serif, 25px;
+    --font-h4: 'Inter', sans-serif, 20px;
+    --font-h5: 'Inter', sans-serif, 14px;
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+    gap: auto;
+    
+    
+    .logo {
+        height: 8.5vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        border: solid;
+
+        img {
+            height: 36px;
+            width: 36px;
+        }
+
+        p {
+            height: 42.3px;
+            font-size: 31.76px;
+            align-items: center;
+        }
+    }
+    nav{
+        display: inline;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        border: solid;
+        a{
+            gap: 33px;
+         }
+        
+    }
+}

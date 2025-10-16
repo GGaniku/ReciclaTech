@@ -11,4 +11,41 @@
   --subtitle: #4B5563;
   --backgroung-box: #F3F5F8;
   --background: #F0FDF4;
+  --font-p: "Poppins", sans-serif, 16px;
+  --font-h1-h2: "Poppins", sans-serif, 25px;
+  --font-h3: "Inter", sans-serif, 25px;
+  --font-h4: "Inter", sans-serif, 20px;
+  --font-h5: "Inter", sans-serif, 14px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  gap: auto;
+}
+header .logo {
+  height: 8.5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  border: solid;
+}
+header .logo img {
+  height: 36px;
+  width: 36px;
+}
+header .logo p {
+  height: 42.3px;
+  font-size: 31.76px;
+  align-items: center;
+}
+header nav {
+  display: inline;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  border: solid;
+}
+header nav a {
+  gap: 33px;
 }/*# sourceMappingURL=style.css.map */
