@@ -2,4 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #16A34A;
+  --secondary-color: #2563EB;
+  --title: #1F2937;
+  --subtitle: #4B5563;
+  --backgroung-box: #F3F5F8;
+  --background: #F0FDF4;
 }/*# sourceMappingURL=style.css.map */
