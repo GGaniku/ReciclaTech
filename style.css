@@ -11,17 +11,18 @@
   --subtitle: #4B5563;
   --backgroung-box: #F3F5F8;
   --background: #F0FDF4;
-  --font-p: "Poppins", sans-serif, 16px;
-  --font-h1-h2: "Poppins", sans-serif, 25px;
-  --font-h3: "Inter", sans-serif, 25px;
-  --font-h4: "Inter", sans-serif, 20px;
-  --font-h5: "Inter", sans-serif, 14px;
+  --font-p-h1-h2: "Poppins", sans-serif;
+  --font-h3--h5: "Inter", sans-serif;
+  --font-size-p: 16px;
+  --font-size-h1-h2:25px;
+  --font-size-h3: 25px;
+  --font-size-h4: 20px;
+  --font-size-h5: 14px;
 }
 
 header {
   display: flex;
-  justify-content: space-around;
-  gap: auto;
+  justify-content: space-between;
 }
 header .logo {
   height: 8.5vh;
@@ -29,24 +30,29 @@ header .logo {
   justify-content: space-around;
   align-items: center;
   gap: 10px;
-  border: solid;
 }
 header .logo img {
   height: 36px;
   width: 36px;
 }
 header .logo p {
-  font: var(--font-p);
+  font-family: var(--font-p-h1-h2);
+  font-weight: bold;
+  font-size: 31.76px;
+  color: var(--subtitle);
   height: 42.3px;
   font-size: 31.76px;
   align-items: center;
 }
 header nav {
-  display: inline;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  border: solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 33px;
 }
 header nav a {
-  gap: 33px;
+  text-decoration: none;
+  font-family: var(--font-p-h1-h2);
+  font-size: var(--font-size-p);
+  color: #4B5563;
 }/*# sourceMappingURL=style.css.map */
