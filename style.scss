@@ -50,7 +50,7 @@ header {
         }
 
         //  Escrita do logo da Recicla Tech
-        p {
+        span {
             font-family: var(--font-p-h1-h2);
             font-weight: bold;
             font-size: 31.76px;
@@ -103,17 +103,59 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 4rem;
+    margin: 3.5rem;
 
+    // Texto principal
     h1 {
         font-family: var(--font-p-h1-h2);
         font-size: 60px;
         color: var(--title);
     }
+
+    // Texto secundário/legenda
     h4 {
         font-family: var(--font-h3--h5);
         font-size: var(--font-size-h4);
         font-weight: 400;
         color: var(--subtitle);
+    }
+
+    // Imagem principal da section
+    img {
+        height: 424px;
+        width: 410.17px;
+    }
+
+    // Imagens dentro dos botões
+    button {
+        img {
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    #btn-doar {
+        font-family: var(--font-p-h1-h2);
+        font-size: var(--font-size-p);
+        padding: 1rem 2rem;
+        background-color: var(--btn-primary-color);
+        border: solid 1px var(--btn-primary-color);
+        border-radius: 6px;
+        color: #FFFFFF;
+
+        &:hover {
+            background-color: #21C05C;
+            border: 1px #21C05C;
+        }
+    }
+
+    #btn-adquirir {
+        font-family: var(--font-p-h1-h2);
+        font-size: var(--font-size-p);
+        padding: 1rem 2rem;
+        background-color: #FFFFFF;
+        border: solid 1px var(--btn-secondary-color);
+        border-radius: 6px;
+        color: var(--btn-secondary-color);
     }
 }
