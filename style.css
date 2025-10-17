@@ -89,6 +89,7 @@ hr {
 #intro h1 {
   font-family: var(--font-p-h1-h2);
   font-size: 60px;
+  line-height: 130%;
   color: var(--title);
 }
 #intro h4 {
@@ -97,13 +98,30 @@ hr {
   font-weight: 400;
   color: var(--subtitle);
 }
-#intro img {
+#intro .main-img-intro {
+  display: inline-block;
   height: 424px;
   width: 410.17px;
+}
+#intro button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 #intro button img {
   height: 24px;
   width: 24px;
+}
+#intro .texto-btn-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#intro .btns-intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: solid;
 }
 #intro #btn-doar {
   font-family: var(--font-p-h1-h2);
@@ -126,4 +144,28 @@ hr {
   border: solid 1px var(--btn-secondary-color);
   border-radius: 6px;
   color: var(--btn-secondary-color);
+}
+
+#dados {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 5vh 7vw;
+  background-color: var(--backgroung-box);
+}
+#dados span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#dados h2 {
+  font-family: var(--font-p-h1-h2);
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--btn-primary-color);
+}
+#dados p {
+  font-family: var(--font-p-h1-h2);
+  font-size: var(--font-size-p);
+  color: var(--subtitle);
 }/*# sourceMappingURL=style.css.map */

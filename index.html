@@ -22,25 +22,34 @@
             <a href="#começar_agora" id="btn_começar_agora">Começar Agora</a>
         </nav>
     </header>
+
     <!-- Linha divisória: -->
     <hr>
+
+    <!-- Section introdutória -->
     <section id="intro">
-        <div>
+        <div class="texto-btn-intro">
             <h1>Dê uma segunda vida <br> aos seus eletrônicos!</h1>
             <h4>Conectamos pessoas que querem doar eletrônicos em bom estado <br> com quem precisa deles. Simples, gratuito e sustentável!</h4>
 
-            <!-- como não usar tanta div?? -->
-            <div class="btn_intro">
-                <button id="btn-doar">Quero Doar
+            <div class="btns_intro">
+                <!-- Botão 'Quero Doar' -->
+                <button id="btn-doar">
+                    <span>Quero Doar</span>
                     <img src="./icons/intro/gift-s.png" alt="Ícone de presente">
                 </button>
-                <button id="btn-adquirir">Quero Adquirir
+
+                <!-- Botão 'Quero Adquirir' -->
+                <button id="btn-adquirir">
+                    <span>Quero Adquirir</span>
                     <img src="./icons/intro/heart-s.png" alt="Ícone de coração">
                 </button>
             </div>
         </div>
-        <img src="/img/section_intro/reciclagem.png" alt="Símbolo de reciclagem feita com circuitos eletrônicos">
+        <img id="main-img-intro" src="/img/section_intro/reciclagem.png" alt="Símbolo de reciclagem feita com circuitos eletrônicos">
     </section>
+
+    <!-- Banner com os dados estatísticos -->
     <banner id="dados">
         <span>
             <h2>2.5k+</h2>
@@ -55,6 +64,8 @@
             <p>Satisfação dos usuários</p>
         </span>
     </banner>
+
+    <!-- Section Como Funciona? -->
     <section id="funcionamento">
         <h2>Como funciona?</h2> <!-- título fluido. pesquisar -->
         <h3>É mais fácil que trocar a pilha do controle!</h3>
@@ -64,6 +75,8 @@
         <!-- como evitar muitas divs? Consultar o vídeo sobre semântica! -->
         <div></div>
     </section>
+
+    <!-- Section para adquirir os produtos -->
     <section id="adquirir">
         <div>
             <h4>
