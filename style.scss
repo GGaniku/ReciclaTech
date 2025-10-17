@@ -21,7 +21,7 @@
 
     // Tamanho da fonte
     --font-size-p: 16px;
-    --font-size-h1-h2:25px;
+    --font-size-h1-h2:40px;
     --font-size-h3: 25px;
     --font-size-h4: 20px;
     --font-size-h5: 14px;
@@ -213,5 +213,113 @@ hr {
         font-size: var(--font-size-p);
         color: var(--subtitle);
 
+    }
+}
+
+// Section Como Funciona?
+#como-funciona {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    padding: 10px 0;
+
+    // Conjunto título e subtítulo da section 
+    span {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-bottom: 4rem;
+    }
+
+    // Título principal da section
+    #title-como-funciona {
+        font-family: var(--font-p-h1-h2);
+        font-size: var(--font-size-h1-h2);
+        font-weight: bold;
+        color: var(--title);
+    }
+
+    // Subtítulo da section
+    #subtitle-como-funciona {
+        font-family: var(--font-h3--h5);
+        font-size: var(--font-size-h3);
+        font-weight: normal;
+        color: var(--title);
+    }
+
+    //// Estilo dos Cards da section
+
+    .conjunto-cards-como-funciona {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // Padrão para Cards da section 'como-funciona'
+
+    .card-como-funciona {
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+        background-color: var(--backgroung-box);
+        border-radius: 8px;
+        padding: 2rem;
+        height: 481px;
+        width: 491px;
+        
+
+        h3 {
+            font-family: var(--font-h3--h5);
+            font-size: var(--font-size-h3);
+            font-weight: normal;
+        }
+
+        .title-card-como-funciona {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        // Padrão Card do parágrafo/subtítulo
+        p {
+            font-family: var(--font-p-h1-h2);
+            font-size: var(--font-size-p);
+            color: var(--subtitle);
+        }
+
+        // Padrão Card da lista numérica
+        ol {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            li {
+                font-family: var(--font-p-h1-h2);
+                font-size: var(--font-size-p);
+                color: var(--subtitle);
+
+                strong {
+                    color: #09090B;
+                }
+            }
+        }
+    }
+
+    // Especificidades de cada Card:
+
+    // Card 'Para Doadores'
+    #doadores-card {
+
+        // Título do card + ícone
+        #title-doadores-card {
+            color: var(--btn-primary-color);
+        }
+    }
+
+    #adquirentes-card {
+ 
+        #title-adquirentes-card {
+            color: var(--btn-secondary-color);
+        }
     }
 }

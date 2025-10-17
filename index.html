@@ -67,14 +67,65 @@
     </banner>
 
     <!-- Section Como Funciona? -->
-    <section id="funcionamento">
-        <h2>Como funciona?</h2> <!-- título fluido. pesquisar -->
-        <h3>É mais fácil que trocar a pilha do controle!</h3>
-        <div>
-            <h3>Para Doadores</h3>
+    <section id="como-funciona">
+        <span>
+            <h2 id="title-como-funciona">Como funciona?</h2>
+            <h3 id="subtitle-como-funciona">É mais fácil que trocar a pilha do controle!</h3>
+        </span>
+
+        <!-- Conjunto dos cards na section -->
+        <div class="conjunto-cards-como-funciona">
+
+            <!-- Card 'Para Doadores' -->
+            <card class="card-como-funciona" id="doadores-card">
+                <div class="title-card-como-funciona" id="title-doadores-card">
+                    <img src="./icons/como-funciona/gift-func.png" alt="Ícone de presente">
+                    <h3>Para Doadores</h3>
+                </div>
+
+                <p>Transforme seu "lixo eletrônico" no tesouro de alguém</p>
+
+                <ol>
+                    <li>
+                        <strong>Cadastre seu eletrônico</strong><br>
+                        Tire umas fotos, descreva o estado e pronto!
+                    </li>
+                    <li>
+                        <strong>Aguarde o match</strong><br>
+                        Alguém vai se interessar pelo seu item
+                    </li>
+                    <li>
+                        <strong>Combine a entrega</strong><br>
+                        Vocês decidem como fazer a entrega
+                    </li>
+                </ol>
+            </card>
+            
+            <!-- Card 'Para Adquirentes' -->
+            <card class="card-como-funciona" id="adquirentes-card">
+                <div class="title-card-como-funciona" id="title-adquirentes-card">
+                    <img src="./icons/como-funciona/heart-func.png" alt="Ícone de coração">
+                    <h3>Para Adquirentes</h3>
+                </div>
+
+                <p>Encontre o eletrônico dos seus sonhos de graça</p>
+
+                <ol>
+                    <li>
+                        <strong>Explore os itens</strong><br>
+                        Navegue pelos eletrônicos disponíveis
+                    </li>
+                    <li>
+                        <strong>Demonstre interesse</strong><br>
+                        Clique em "Tenho interesse" no item
+                    </li>
+                    <li>
+                        <strong>Receba seu novo gadget</strong><br>
+                        Combine com o doador e seja feliz!
+                    </li>
+                </ol>
+            </card>
         </div>
-        <!-- como evitar muitas divs? Consultar o vídeo sobre semântica! -->
-        <div></div>
     </section>
 
     <!-- Section para adquirir os produtos -->

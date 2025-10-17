@@ -15,7 +15,7 @@
   --font-p-h1-h2: "Poppins", sans-serif;
   --font-h3--h5: "Inter", sans-serif;
   --font-size-p: 16px;
-  --font-size-h1-h2:25px;
+  --font-size-h1-h2:40px;
   --font-size-h3: 25px;
   --font-size-h4: 20px;
   --font-size-h5: 14px;
@@ -168,4 +168,78 @@ hr {
   font-family: var(--font-p-h1-h2);
   font-size: var(--font-size-p);
   color: var(--subtitle);
+}
+
+#como-funciona {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+  padding: 10px 0;
+}
+#como-funciona span {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 4rem;
+}
+#como-funciona #title-como-funciona {
+  font-family: var(--font-p-h1-h2);
+  font-size: var(--font-size-h1-h2);
+  font-weight: bold;
+  color: var(--title);
+}
+#como-funciona #subtitle-como-funciona {
+  font-family: var(--font-h3--h5);
+  font-size: var(--font-size-h3);
+  font-weight: normal;
+  color: var(--title);
+}
+#como-funciona .conjunto-cards-como-funciona {
+  display: flex;
+  justify-content: space-between;
+}
+#como-funciona .card-como-funciona {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  background-color: var(--backgroung-box);
+  border-radius: 8px;
+  padding: 2rem;
+  height: 481px;
+  width: 491px;
+}
+#como-funciona .card-como-funciona h3 {
+  font-family: var(--font-h3--h5);
+  font-size: var(--font-size-h3);
+  font-weight: normal;
+}
+#como-funciona .card-como-funciona .title-card-como-funciona {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+#como-funciona .card-como-funciona p {
+  font-family: var(--font-p-h1-h2);
+  font-size: var(--font-size-p);
+  color: var(--subtitle);
+}
+#como-funciona .card-como-funciona ol {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#como-funciona .card-como-funciona ol li {
+  font-family: var(--font-p-h1-h2);
+  font-size: var(--font-size-p);
+  color: var(--subtitle);
+}
+#como-funciona .card-como-funciona ol li strong {
+  color: #09090B;
+}
+#como-funciona #doadores-card #title-doadores-card {
+  color: var(--btn-primary-color);
+}
+#como-funciona #adquirentes-card #title-adquirentes-card {
+  color: var(--btn-secondary-color);
 }/*# sourceMappingURL=style.css.map */
