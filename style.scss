@@ -5,9 +5,9 @@
 }
 
 :root{
-    // cores
-    --primary-color: #16A34A;
-    --secondary-color: #2563EB;
+    // Cores
+    --btn-primary-color: #16A34A;
+    --btn-secondary-color: #2563EB;
     --title: #1F2937;
     --subtitle: #4B5563;
     --backgroung-box: #F3F5F8;
@@ -27,38 +27,44 @@
     --font-size-h5: 14px;
 }
 
+// Header
 header {
     display: flex;
     justify-content: space-between;
-    // border: solid blue;
-    
+    height: 60px;
+    margin: 2rem 2.3rem;
+    margin-bottom: 0;
+
+    // Caixa do logo como um todo
     .logo {
         height: 8.5vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
         gap: 10px;
-        // border: solid;
 
+        // Logo da Recicla Tech
         img {
             height: 36px;
             width: 36px;
         }
 
+        //  Escrita do logo da Recicla Tech
         p {
             font-family: var(--font-p-h1-h2);
             font-weight: bold;
             font-size: 31.76px;
-            color: var(--subtitle);
+            color: var(--title);
             height: 42.3px;
             font-size: 31.76px;
             align-items: center;
         }
     }
+
+    // Menu de navegação
     nav{
         display: flex;
         align-items: center;
-        // border: solid;
         justify-content: space-around;
         gap: 33px;
         a {
@@ -67,6 +73,47 @@ header {
             font-size: var(--font-size-p);
             color: #4B5563;
         }
+
+        #btn_começar_agora {
+            padding: 10px 30px;
+            background-color: var(--btn-primary-color);
+            color: #FFFFFF;
+            padding: 20px 30px; // Top/bottom e left/right
+            border: solid 1px var(--btn-primary-color);
+            border-radius: 6px;
+
+            &:hover {
+                background-color: #21C05C;
+                border: 1px #21C05C
+            }
+        }
     }
 }
 
+// Divisória de sections
+hr {
+    border: none;
+    height: 1px;
+    background-color: #B4AEAE;
+    margin: 17px 2rem;
+}
+
+// Section Intro
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem;
+
+    h1 {
+        font-family: var(--font-p-h1-h2);
+        font-size: 60px;
+        color: var(--title);
+    }
+    h4 {
+        font-family: var(--font-h3--h5);
+        font-size: var(--font-size-h4);
+        font-weight: 400;
+        color: var(--subtitle);
+    }
+}
