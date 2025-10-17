@@ -27,6 +27,31 @@
     --font-size-h5: 14px;
 }
 
+//Padrão de tamanho de fonte
+body {
+    h1, h2{
+        font-family: var(--font-p-h1-h2);
+        font-size: 60px;
+        line-height: 130%;
+        color: var(--title);
+    }
+
+    h3 {
+        font-family: var(--font-h3--h5);
+        font-size: var(--font-size-h3);
+        font-weight: normal;
+    }
+
+    h4 {
+        font-family: var(--font-h3--h5);
+        font-size: var(--font-size-h4);
+        font-weight: 400;
+        // color: var(--subtitle);
+    }
+
+
+}
+
 // Header
 header {
     display: flex;
@@ -107,17 +132,12 @@ hr {
 
     // Texto principal
     h1 {
-        font-family: var(--font-p-h1-h2);
         font-size: 60px;
         line-height: 130%;
-        color: var(--title);
     }
 
     // Texto secundário/legenda
     h4 {
-        font-family: var(--font-h3--h5);
-        font-size: var(--font-size-h4);
-        font-weight: 400;
         color: var(--subtitle);
     }
 
@@ -212,7 +232,6 @@ hr {
         font-family: var(--font-p-h1-h2);
         font-size: var(--font-size-p);
         color: var(--subtitle);
-
     }
 }
 
@@ -267,11 +286,11 @@ hr {
         width: 491px;
         
 
-        h3 {
-            font-family: var(--font-h3--h5);
-            font-size: var(--font-size-h3);
-            font-weight: normal;
-        }
+        // h3 {
+        //     font-family: var(--font-h3--h5);
+        //     font-size: var(--font-size-h3);
+        //     font-weight: normal;
+        // }
 
         .title-card-como-funciona {
             display: flex;
@@ -292,6 +311,7 @@ hr {
             display: flex;
             flex-direction: column;
             gap: 2rem;
+            // list-style-image: url(./icons/como-funciona/itens/verde.png);
 
             li {
                 font-family: var(--font-p-h1-h2);

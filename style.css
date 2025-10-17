@@ -21,6 +21,23 @@
   --font-size-h5: 14px;
 }
 
+body h1, body h2 {
+  font-family: var(--font-p-h1-h2);
+  font-size: 60px;
+  line-height: 130%;
+  color: var(--title);
+}
+body h3 {
+  font-family: var(--font-h3--h5);
+  font-size: var(--font-size-h3);
+  font-weight: normal;
+}
+body h4 {
+  font-family: var(--font-h3--h5);
+  font-size: var(--font-size-h4);
+  font-weight: 400;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -87,15 +104,10 @@ hr {
   margin: 3.5rem;
 }
 #intro h1 {
-  font-family: var(--font-p-h1-h2);
   font-size: 60px;
   line-height: 130%;
-  color: var(--title);
 }
 #intro h4 {
-  font-family: var(--font-h3--h5);
-  font-size: var(--font-size-h4);
-  font-weight: 400;
   color: var(--subtitle);
 }
 #intro .main-img-intro {
@@ -207,11 +219,6 @@ hr {
   padding: 2rem;
   height: 481px;
   width: 491px;
-}
-#como-funciona .card-como-funciona h3 {
-  font-family: var(--font-h3--h5);
-  font-size: var(--font-size-h3);
-  font-weight: normal;
 }
 #como-funciona .card-como-funciona .title-card-como-funciona {
   display: flex;
