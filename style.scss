@@ -29,10 +29,17 @@
 
 //Padrão de tamanho de fonte
 body {
-    h1, h2{
+    h1{
         font-family: var(--font-p-h1-h2);
         font-size: 60px;
         line-height: 130%;
+        color: var(--title);
+    }
+
+    h2 {
+        font-family: var(--font-p-h1-h2);
+        font-size: var(--font-size-h1-h2);
+        font-weight: bold;
         color: var(--title);
     }
 
@@ -46,9 +53,12 @@ body {
         font-family: var(--font-h3--h5);
         font-size: var(--font-size-h4);
         font-weight: 400;
-        // color: var(--subtitle);
     }
 
+    p {
+        font-family: var(--font-p-h1-h2);
+        font-size: var(--font-size-p);
+    }
 
 }
 
@@ -123,8 +133,8 @@ hr {
     margin: 17px 2rem;
 }
 
-// Section Intro
-#intro {
+// Section Hero
+#hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,7 +152,7 @@ hr {
     }
 
     // Imagem principal da section
-    .main-img-intro {
+    .main-img-hero {
         display: inline-block;
         height: 424px;
         width: 410.17px;
@@ -160,17 +170,18 @@ hr {
         }
     }
 
-    .texto-btn-intro {
+    .texto-btn-hero {
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
 
-    .btns-intro {
+    .btns-hero {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
-        border: solid;
+        flex-direction: row nowrap;
+        width: 35vw;
     }
 
     // Botão 'Quero Doar'
@@ -214,7 +225,6 @@ hr {
     // Cada caixa de dado estatístico
     span {
         display: flex;
-        // border: solid 1px;
         flex-direction: column;
         align-items: center;
     }
@@ -239,8 +249,7 @@ hr {
 #como-funciona {
     display: flex;
     flex-direction: column;
-    margin: 5rem;
-    padding: 10px 0;
+    padding: 5rem;
 
     // Conjunto título e subtítulo da section 
     span {
@@ -250,19 +259,8 @@ hr {
         padding-bottom: 4rem;
     }
 
-    // Título principal da section
-    #title-como-funciona {
-        font-family: var(--font-p-h1-h2);
-        font-size: var(--font-size-h1-h2);
-        font-weight: bold;
-        color: var(--title);
-    }
-
     // Subtítulo da section
     #subtitle-como-funciona {
-        font-family: var(--font-h3--h5);
-        font-size: var(--font-size-h3);
-        font-weight: normal;
         color: var(--title);
     }
 
@@ -271,6 +269,8 @@ hr {
     .conjunto-cards-como-funciona {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
     }
 
     // Padrão para Cards da section 'como-funciona'
@@ -284,7 +284,6 @@ hr {
         padding: 2rem;
         height: 481px;
         width: 491px;
-        
 
         // h3 {
         //     font-family: var(--font-h3--h5);
@@ -301,8 +300,6 @@ hr {
         
         // Padrão Card do parágrafo/subtítulo
         p {
-            font-family: var(--font-p-h1-h2);
-            font-size: var(--font-size-p);
             color: var(--subtitle);
         }
 
@@ -341,5 +338,79 @@ hr {
         #title-adquirentes-card {
             color: var(--btn-secondary-color);
         }
+    }
+}
+
+// Section para Adquirir os produtos
+#adquirir {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    background-color: var(--backgroung-box);
+
+    h3 {
+        color: var(--subtitle);
+    }
+
+    img {
+        width: 100%;
+        height: 234px;
+    }
+
+    button {
+        padding: 10px 30px;
+        font-family: var(--font-h3--h5);
+        font-size: var(--font-size-h5);
+        font-weight: 300;
+        background-color: var(--btn-primary-color);
+        color: #FFFFFF;
+        border: solid 1px var(--btn-primary-color);
+        border-radius: 6px;
+    }
+
+    #titleSubtitleAdquirir {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-bottom: 4rem;
+    }
+
+    #allCardsAdquirir {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+        // justify-content: space-between;
+
+    }
+
+    .cardAdquirir {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+        background-color: #FFFFFF;
+        width: 295px;
+        border: solid var(--btn-primary-color) 2px;
+        border-radius: 8px;
+        padding-bottom: 2rem;
+
+
+        p {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color: var(--subtitle);
+        }
+    }
+    
+    .cardNomeLegenda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 0.5rem
     }
 }

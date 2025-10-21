@@ -18,7 +18,7 @@
         </div>
         <nav class="nav">
             <a href="#como-funciona">Como Funciona</a>
-            <a href="#intro">Doar</a>
+            <a href="#hero">Doar</a>
             <a href="#adquirir">Adquirir</a>
             <a href="#começar-agora" id="btn_começar_agora">Começar Agora</a>
         </nav>
@@ -27,13 +27,13 @@
     <!-- Linha divisória: -->
     <hr>
 
-    <!-- Section introdutória -->
-    <section id="intro">
-        <article class="texto-btn-intro">
-            <h1>Dê uma segunda vida <br> aos seus eletrônicos!</h1>
-            <h4>Conectamos pessoas que querem doar eletrônicos em bom estado <br> com quem precisa deles. Simples, gratuito e sustentável!</h4>
+    <!-- Section introdutória - Section Hero -->
+    <section id="hero">
+        <article class="texto-btn-hero">
+            <h1>Dê uma segunda vida aos seus eletrônicos!</h1>
+            <h4>Conectamos pessoas que querem doar eletrônicos em bom estado com quem precisa deles. Simples, gratuito e sustentável!</h4>
 
-            <div class="btns_intro">
+            <div class="btns-hero">
                 <!-- Botão 'Quero Doar' -->
                 <button id="btn-doar">
                     <span>Quero Doar</span>
@@ -47,7 +47,7 @@
                 </button>
             </div>
         </article>
-        <img id="main-img-intro" src="/img/section_intro/reciclagem.png" alt="Símbolo de reciclagem feita com circuitos eletrônicos">
+        <img id="main-img-hero" src="/img/section_intro/reciclagem.png" alt="Símbolo de reciclagem feita com circuitos eletrônicos">
     </section>
 
     <!-- Banner com os dados estatísticos -->
@@ -130,9 +130,36 @@
 
     <!-- Section para adquirir os produtos -->
     <section id="adquirir">
-        <article>
+        <article id="titleSubtitleAdquirir">
             <h2>Produtos disponíveis</h2>
-            <h3></h3>
+            <h3>Categorias mais populares</h3>
+        </article>
+        <article id="allCardsAdquirir">
+            <div class="cardAdquirir">
+                <img src="./img/section_produtos/fone.png" alt="Imagem ilustrativa de fone de ouvido">
+                <div class="cardNomeLegenda">
+                    <h4>Fones</h4>
+                    <p>Fones em ótimo estado, <br> prontos pra uso.</p>
+                    <!-- como conseguiria fazer essa linha acima sem utilizar <br>? -->
+                </div>
+                <button>Quero adquirir</button>
+            </div>
+            <div class="cardAdquirir">
+                <img src="./img/section_produtos/notebook.png" alt="Imagem ilustrativa de notebook">
+                <div class="cardNomeLegenda">
+                    <h4>Notebooks</h4>
+                    <p>Notebooks funcionando <br> direitinho, prontos pra você usar.</p>
+                </div>
+                <button>Quero adquirir</button>
+            </div>
+            <div class="cardAdquirir">
+                <img src="./img/section_produtos/smartphone.png" alt="Imagem ilustrativa de smatphone">
+                <div class="cardNomeLegenda">
+                    <h4>Smartphones</h4>
+                    <p>Celulares em ótimo estado, prontos pra uma nova jornada.</p>
+                </div>
+                <button>Quero adquirir</button>
+            </div>
         </article>
     </section>
 
