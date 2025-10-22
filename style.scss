@@ -47,6 +47,7 @@ body {
         font-family: var(--font-h3--h5);
         font-size: var(--font-size-h3);
         font-weight: normal;
+        color: var(--subtitle);
     }
 
     h4 {
@@ -287,13 +288,14 @@ hr {
         height: 481px;
         width: 491px;
 
+        // Padrão para títulos dos cards
         .titleCardComoFunciona {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             gap: 8px;
         }
-        
+
         // Padrão Card do parágrafo/subtítulo
         p {
             color: var(--subtitle);
@@ -318,20 +320,18 @@ hr {
         }
     }
 
-    // Especificidades de cada Card:
+    /// Especificidades de cada Card:
 
-    // Card 'Para Doadores'
-    #doadoresCard {
-
-        // Título do card + ícone
-        #titleDoadoresCard {
+    // Título card 'Para Doadores'
+    #titleDoadoresCard {
+        h3 {
             color: var(--btn-primary-color);
         }
     }
 
-    #adquirentesCard {
- 
-        #titleAdquirentesCard {
+    // Título card 'Para Adquirentes'
+    #titleAdquirentesCard {
+        h3 {
             color: var(--btn-secondary-color);
         }
     }
@@ -410,3 +410,4 @@ hr {
         padding: 0 0.5rem
     }
 }
+
