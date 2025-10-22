@@ -146,29 +146,46 @@
             </div>
             <div class="cardAdquirir">
                 <img src="./img/section_produtos/notebook.png" alt="Imagem ilustrativa de notebook">
-                <div class="cardNomeLegenda">
+                <span class="cardNomeLegenda">
                     <h4>Notebooks</h4>
                     <p>Notebooks funcionando <br> direitinho, prontos pra você usar.</p>
-                </div>
+                </span>
                 <button>Quero adquirir</button>
             </div>
             <div class="cardAdquirir">
                 <img src="./img/section_produtos/smartphone.png" alt="Imagem ilustrativa de smatphone">
-                <div class="cardNomeLegenda">
+                <span class="cardNomeLegenda">
                     <h4>Smartphones</h4>
                     <p>Celulares em ótimo estado, prontos pra uma nova jornada.</p>
-                </div>
+                </span>
                 <button>Quero adquirir</button>
             </div>
         </article>
     </section>
 
-    <!-- Section para controle de qualidade -->
-    <section>
-        <div>
-            <h2>Controle de qualidade do produto</h2>
-            <h3>Aqui no Recicla Tech, a qualidade do produto é muito bem </h3>
-        </div>
+    <!-- Section formulário -->
+    <section class="formulario">
+
+        <h2>Doe seu dispositivo</h2>
+        <h3>Em apenas alguns cliques, você cadastra seu dispositivo para doação!</h3>
+        
+        <form>
+            <!-- Talvez substituir o <p> por <fieldset> e <legend>, com id para cada um para melhor estilização -->
+            <p>Dados pessoais</p>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome e sobrenome"/>
+
+            <p>Nos conte um pouco sobre seu dispositivo</p>
+            <label for="tipo">Tipo de dispositivo</label>
+            <select id="tipo" name="tipo">
+                <option value="">Selecione</option>
+                <option value="notebook">Notebook</option>
+                <option value="celular">Celular</option>
+            </select>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
     </section>
 
     <!-- Section para depoimentos -->
