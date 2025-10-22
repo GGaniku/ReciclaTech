@@ -79,6 +79,8 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  text-align: center;
+  text-wrap: nowrap;
   gap: 33px;
 }
 header nav a {
@@ -87,7 +89,7 @@ header nav a {
   font-size: var(--font-size-p);
   color: #4B5563;
 }
-header nav #btn_começar_agora {
+header nav #btnComeçarAgora {
   padding: 10px 30px;
   background-color: var(--btn-primary-color);
   color: #FFFFFF;
@@ -95,7 +97,7 @@ header nav #btn_começar_agora {
   border: solid 1px var(--btn-primary-color);
   border-radius: 6px;
 }
-header nav #btn_começar_agora:hover {
+header nav #btnComeçarAgora:hover {
   background-color: #21C05C;
   border: 1px #21C05C;
 }
@@ -120,7 +122,7 @@ hr {
 #hero h4 {
   color: var(--subtitle);
 }
-#hero .main-img-hero {
+#hero .mainImgHero {
   display: inline-block;
   height: 424px;
   width: 410.17px;
@@ -134,19 +136,19 @@ hr {
   height: 24px;
   width: 24px;
 }
-#hero .texto-btn-hero {
+#hero .textoBtnHero {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-#hero .btns-hero {
+#hero .btnsHero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row nowrap;
   width: 35vw;
 }
-#hero #btn-doar {
+#hero #btnDoar {
   font-family: var(--font-p-h1-h2);
   font-size: var(--font-size-p);
   padding: 1rem 2rem;
@@ -155,11 +157,11 @@ hr {
   border-radius: 6px;
   color: #FFFFFF;
 }
-#hero #btn-doar:hover {
+#hero #btnDoar:hover {
   background-color: #21C05C;
   border: 1px #21C05C;
 }
-#hero #btn-adquirir {
+#hero #btnAdquirir {
   font-family: var(--font-p-h1-h2);
   font-size: var(--font-size-p);
   padding: 1rem 2rem;
@@ -193,27 +195,27 @@ hr {
   color: var(--subtitle);
 }
 
-#como-funciona {
+#comoFunciona {
   display: flex;
   flex-direction: column;
   padding: 5rem;
 }
-#como-funciona span {
+#comoFunciona span {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   padding-bottom: 4rem;
 }
-#como-funciona #subtitle-como-funciona {
+#comoFunciona h3 {
   color: var(--title);
 }
-#como-funciona .conjunto-cards-como-funciona {
+#comoFunciona .conjuntoCardsComoFunciona {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2rem;
 }
-#como-funciona .card-como-funciona {
+#comoFunciona .cardComoFunciona {
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
@@ -223,32 +225,32 @@ hr {
   height: 481px;
   width: 491px;
 }
-#como-funciona .card-como-funciona .title-card-como-funciona {
+#comoFunciona .cardComoFunciona .titleCardComoFunciona {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
 }
-#como-funciona .card-como-funciona p {
+#comoFunciona .cardComoFunciona p {
   color: var(--subtitle);
 }
-#como-funciona .card-como-funciona ol {
+#comoFunciona .cardComoFunciona ol {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-#como-funciona .card-como-funciona ol li {
+#comoFunciona .cardComoFunciona ol li {
   font-family: var(--font-p-h1-h2);
   font-size: var(--font-size-p);
   color: var(--subtitle);
 }
-#como-funciona .card-como-funciona ol li strong {
+#comoFunciona .cardComoFunciona ol li strong {
   color: #09090B;
 }
-#como-funciona #doadores-card #title-doadores-card {
+#comoFunciona #doadoresCard #titleDoadoresCard {
   color: var(--btn-primary-color);
 }
-#como-funciona #adquirentes-card #title-adquirentes-card {
+#comoFunciona #adquirentesCard #titleAdquirentesCard {
   color: var(--btn-secondary-color);
 }
 
