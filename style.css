@@ -52,6 +52,7 @@ body p {
 header {
   display: flex;
   justify-content: space-between;
+  width: 100vw;
   height: 60px;
   margin: 2rem 2.3rem;
   margin-bottom: 0;
@@ -113,8 +114,10 @@ hr {
 #hero {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 3.5rem;
+  width: 100vw;
+  padding: 5rem;
 }
 #hero h1 {
   font-size: 60px;
@@ -176,6 +179,7 @@ hr {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  width: 100vw;
   padding: 5vh 7vw;
   background-color: var(--backgroung-box);
 }
@@ -199,6 +203,7 @@ hr {
 #comoFunciona {
   display: flex;
   flex-direction: column;
+  width: 100vw;
   padding: 5rem;
 }
 #comoFunciona span {
@@ -258,6 +263,7 @@ hr {
 #adquirir {
   display: flex;
   flex-direction: column;
+  width: 100vw;
   padding: 5rem;
   background-color: var(--backgroung-box);
 }
@@ -322,6 +328,7 @@ hr {
   flex-direction: column;
   padding: 5rem;
   gap: 1.5rem;
+  width: 100vw;
 }
 #formulario form {
   display: flex;
