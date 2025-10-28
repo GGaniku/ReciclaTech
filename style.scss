@@ -70,10 +70,10 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100vw;
-    height: 60px;
-    margin: 2rem 2.3rem;
-    margin-bottom: 0;
+    height: 3.75rem;
+    padding: 4rem 2rem 2.3rem 2rem;
 
     // Caixa do logo como um todo
     .logo {
@@ -141,7 +141,7 @@ hr {
     border: none;
     height: 1px;
     background-color: #B4AEAE;
-    margin: 17px 2rem;
+    margin: 1rem 2rem;
 }
 
 // Section Hero
