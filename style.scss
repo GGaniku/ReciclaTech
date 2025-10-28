@@ -106,6 +106,7 @@ header {
         text-align: center;
         text-wrap: nowrap;
         gap: 33px;
+        
         a {
             text-decoration: none;
             font-family: var(--font-p-h1-h2);
@@ -114,7 +115,6 @@ header {
         }
 
         #btnComeçarAgora {
-            padding: 10px 30px;
             background-color: var(--btn-primary-color);
             color: #FFFFFF;
             padding: 20px 30px; // Top/bottom e left/right
@@ -141,10 +141,9 @@ hr {
 #hero {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
     width: 100vw;
-    padding: 5rem;
+    padding: 5rem 3rem; 
 
     // Texto principal
     h1 {
@@ -160,8 +159,8 @@ hr {
     // Imagem principal da section
     .mainImgHero {
         display: inline-block;
-        height: 424px;
-        width: 410.17px;
+        height: 10rem;
+        width: 10rem;
     }
 
     // Botões da section
@@ -513,5 +512,85 @@ hr {
         background-color: #e9f2e8;
         font-family: var(--font-size-h1-h2);
         width: auto;
+    }
+}
+
+// Section Depoimentos
+
+#depoimentos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem;
+    width: 100vw;
+    background-color: var(--backgroung-box);
+
+    .iconStars {
+        width: 7.5rem;
+    }
+
+    h2, h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #conjuntoCardsDepoimentos {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .cardDepoimento {
+        display: flex;
+        flex-direction: column;
+        border: solid 1px #9CA3AF;
+        border-left: solid 4px #9CA3AF;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        padding: 2rem 2.5rem;
+        gap: 1rem;
+        width: 21rem;
+        height: auto;
+    }
+
+    p {
+        color: var(--subtitle);
+    }
+
+    h5 {
+        font-family: var(--font-p-h1-h2);
+        font-size: var(--font-size-h5);
+        font-weight: normal;
+    }
+
+    .iconeDepoimento {
+        width: 2.5rem;
+        height: 2.5rem;
+        align-self: center;
+    }
+
+    .infoUser {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1rem 0;
+        
+        span {
+            display: flex;
+            flex-direction: column;
+            
+            .nameUser {
+                color: var(--title);
+                font-weight: bolder;
+            
+            }
+
+            .descriptionUser {
+                color: var(--subtitle);
+            }
+        }
+        
     }
 }
