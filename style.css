@@ -91,6 +91,9 @@ header nav a {
   font-size: var(--font-size-p);
   color: #4B5563;
 }
+header nav a:hover {
+  color: #16A34A;
+}
 header nav #btnComeçarAgora {
   background-color: var(--btn-primary-color);
   color: #FFFFFF;
@@ -100,7 +103,7 @@ header nav #btnComeçarAgora {
 }
 header nav #btnComeçarAgora:hover {
   background-color: #21C05C;
-  border: 1px #21C05C;
+  border: solid 1px #21C05C;
 }
 
 hr {
@@ -161,7 +164,7 @@ hr {
 }
 #hero #btnDoar:hover {
   background-color: #21C05C;
-  border: 1px #21C05C;
+  border: solid 1px #21C05C;
 }
 #hero #btnAdquirir {
   font-family: var(--font-p-h1-h2);
@@ -171,6 +174,10 @@ hr {
   border: solid 1px var(--btn-secondary-color);
   border-radius: 6px;
   color: var(--btn-secondary-color);
+}
+#hero #btnAdquirir:hover {
+  font-style: italic;
+  text-decoration: underline;
 }
 
 #dados {
@@ -281,6 +288,10 @@ hr {
   color: #FFFFFF;
   border: solid 1px var(--btn-primary-color);
   border-radius: 6px;
+}
+#adquirir button:hover {
+  background-color: #21C05C;
+  border: solid 1px #21C05C;
 }
 #adquirir #titleSubtitleAdquirir {
   display: flex;
