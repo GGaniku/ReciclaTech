@@ -61,6 +61,9 @@ body {
         font-size: var(--font-size-p);
     }
 
+    button {
+        cursor: pointer;
+    }
 }
 
 // Header
@@ -223,6 +226,11 @@ hr {
             font-style: italic;
             text-decoration: underline;
         }
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 }
 
@@ -518,12 +526,17 @@ hr {
         padding-top: 1rem;
     }
 
-    input, select, option {
+    input, select, option, #tipo {
         border: none;
         border-bottom: #999a9b 1px solid;
         background-color: #e9f2e8;
         font-family: var(--font-size-h1-h2);
         width: auto;
+    }
+
+    #imagens {
+        color: var(--subtitle);
+        ;
     }
 }
 
@@ -637,7 +650,7 @@ hr {
 
         &:hover {
             background-color: #21C05C;
-            border: #21C05C;
+            border: solid 1px #21C05C;
         }
     }
 
@@ -724,6 +737,9 @@ hr {
     }
 
     .redesSociaisFooter {
+        display: flex;
+        flex-direction: row;
         padding-top: 1.5rem;
+        gap: 1rem;
     }
 }
