@@ -520,4 +520,58 @@ hr {
 #começarAgora div {
   display: flex;
   gap: 1.5rem;
+}
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--title);
+  color: #9CA3AF;
+}
+#contato #logoFooter {
+  display: flex;
+  gap: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+#contato #logoFooter h4 {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+#contato #conjuntoCardsFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 5rem 2.5rem 1.5rem;
+  gap: 6rem;
+}
+#contato .cardFooter {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
+#contato .cardFooter .titleFooter {
+  color: #FFFFFF;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+#contato ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#contato ul li {
+  font-family: var(--font-p-h1-h2);
+  font-size: var(--font-size-p);
+  list-style: none;
+}
+#contato a {
+  text-decoration: none;
+  color: #9CA3AF;
+}
+#contato span {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 2rem 0;
+}
+#contato .redesSociaisFooter {
+  padding-top: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

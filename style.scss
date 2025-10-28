@@ -414,7 +414,6 @@ hr {
 }
 
 // Section Formulário
-
 #formulario {
     display: flex;
     flex-direction: column;
@@ -515,7 +514,6 @@ hr {
 }
 
 // Section Depoimentos
-
 #depoimentos {
     display: flex;
     flex-direction: column;
@@ -596,7 +594,6 @@ hr {
 }
 
 // Banner convite para doar
-
 #começarAgora {
     display: flex;
     flex-direction: column;
@@ -649,5 +646,70 @@ hr {
     div {
         display: flex;
         gap: 1.5rem;
+    }
+}
+
+// Footer
+#contato {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--title);
+    color: #9CA3AF;
+    
+    #logoFooter {
+        display: flex;
+        gap: 0.5rem;
+        padding-bottom: 1.5rem;
+
+        h4 {
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+    }
+
+    #conjuntoCardsFooter {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.5rem 5rem 2.5rem 1.5rem;
+        gap: 6rem;
+    }
+
+    .cardFooter {
+        display: flex;
+        flex-direction: column;
+        width: 15rem;
+
+        .titleFooter {
+            color: #FFFFFF;
+            font-weight: bold;
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        li {
+            font-family: var(--font-p-h1-h2);
+            font-size: var(--font-size-p);
+            list-style: none;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #9CA3AF;
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0 2rem 0;
+    }
+
+    .redesSociaisFooter {
+        padding-top: 1.5rem;
     }
 }
