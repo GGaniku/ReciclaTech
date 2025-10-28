@@ -379,7 +379,6 @@ hr {
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 2rem;
-        // justify-content: space-between;
 
     }
 
@@ -593,5 +592,62 @@ hr {
             }
         }
         
+    }
+}
+
+// Banner convite para doar
+
+#começarAgora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 22.5rem;
+    gap: 1.5rem;
+    width: 100%;
+
+    h3 {
+        color: var(--title);
+    }
+
+    div {
+        padding-top: 1.5rem;
+    }
+
+    #btnComeçarAgora {
+        padding: 10px 30px;
+        font-family: var(--font-p-h1-h2);
+        font-size: var(--font-size-p);
+        font-weight: 300;
+        background-color: var(--btn-primary-color);
+        color: #FFFFFF;
+        border: solid 1px var(--btn-primary-color);
+        border-radius: 6px;
+
+        &:hover {
+            background-color: #21C05C;
+            border: #21C05C;
+        }
+    }
+
+    #btnSaberMais {
+        padding: 10px 30px;
+        font-family: var(--font-p-h1-h2);
+        font-size: var(--font-size-p);
+        font-weight: 300;
+        background-color: #FFFFFF;
+        color: var(--btn-primary-color);
+        border: solid 1px var(--btn-primary-color);
+        border-radius: 6px;
+
+        &:hover {
+            font-style: italic;
+            text-decoration: underline;
+        }
+    }
+
+    div {
+        display: flex;
+        gap: 1.5rem;
     }
 }

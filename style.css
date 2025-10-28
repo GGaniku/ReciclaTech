@@ -472,4 +472,52 @@ hr {
 }
 #depoimentos .infoUser span .descriptionUser {
   color: var(--subtitle);
+}
+
+#começarAgora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 22.5rem;
+  gap: 1.5rem;
+  width: 100%;
+}
+#começarAgora h3 {
+  color: var(--title);
+}
+#começarAgora div {
+  padding-top: 1.5rem;
+}
+#começarAgora #btnComeçarAgora {
+  padding: 10px 30px;
+  font-family: var(--font-p-h1-h2);
+  font-size: var(--font-size-p);
+  font-weight: 300;
+  background-color: var(--btn-primary-color);
+  color: #FFFFFF;
+  border: solid 1px var(--btn-primary-color);
+  border-radius: 6px;
+}
+#começarAgora #btnComeçarAgora:hover {
+  background-color: #21C05C;
+  border: #21C05C;
+}
+#começarAgora #btnSaberMais {
+  padding: 10px 30px;
+  font-family: var(--font-p-h1-h2);
+  font-size: var(--font-size-p);
+  font-weight: 300;
+  background-color: #FFFFFF;
+  color: var(--btn-primary-color);
+  border: solid 1px var(--btn-primary-color);
+  border-radius: 6px;
+}
+#começarAgora #btnSaberMais:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
+#começarAgora div {
+  display: flex;
+  gap: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
