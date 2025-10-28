@@ -182,36 +182,123 @@
 
                 <label for="telefone">Telefone de Contato (com DDD)</label>
                 <input type="tel" id="telefone" name="telefone" placeholder="(DDD) XXXXX-XXXX" required/>
+
                 <label for="whatsapp">Posso entrar em contato via WhatsApp?</label>
                 <input type="checkbox" id="whatsapp" name="whatsapp"/>
 
-                <label for=""></label>
+                <p>Onde você se localiza?</p>
+                <input type="radio" id="rj" name="local" value="rj" required/>
+                <label for="rj">Rio de Janeiro</label>
 
+                <input type="radio" id="sp" name="local" value="sp" required/>
+                <label for="sp">São Paulo</label>
             </fieldset>
 
-            <p>Nos conte um pouco sobre seu dispositivo</p>
-            <label for="tipo">Tipo de dispositivo</label>
-            <select id="tipo" name="tipo" required>
-                <option value="">Selecione</option>
-                <option value="notebook">Notebook</option>
-                <option value="celular">Celular</option>
-                <option value="tablet">Tablet</option>
-                <option value="outro">Outro</option>
-            </select>
+            <fieldset id="">
+                <p>Nos conte um pouco sobre seu dispositivo</p>
 
+                <label for="tipo">Tipo de dispositivo:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Selecione</option>
+                    <option value="notebook">Notebook</option>
+                    <option value="celular">Celular</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="modelo">Marca e Modelo:</label>
+                <input type="text" id="modelo" name="modelo" placeholder="Ex: Samsung Galaxy A30" required/>
+            </fieldset>
 
             <button type="submit">Cadastrar</button>
         </form>
-
     </section>
 
     <!-- Section para depoimentos -->
-    <section id="depoimentos"></section>
+    <section id="depoimentos">
+        <h2>O que o pessoal tá falando?</h2>
+        <h3>Histórias reais de quem já usou nossos serviços</h3>
+
+        <article class="conjuntoCardsDepoimentos">
+            <div class="cardDepoimento">
+                <img src="./icons/depoimento/star.png" alt="Classificação de 5 estrelas">
+                <p>"Doei meu notebook antigo e em 2 dias já tinha alguém interessado! Ver a felicidade do estudante que recebeu não tem preço! 😊"</p>
+
+                <div>
+                    <img class="simboloDepoimento" src="./icons/depoimento/gift-depoimento.png" alt="Símbolo de presente">
+                    <h5 class="nameUser">João Santos - Rio de Janeiro, RJ</h5>
+                    <h5 class="descriptionUser">Doador</h5>
+                </div>
+            </div>
+
+            <div class="cardDepoimento">
+                <img src="./icons/depoimento/star.png" alt="Classificação de 5 estrelas">
+                <p>"Consegui um iPhone 12 em perfeito estado! A dona anterior cuidou super bem. Economizei uma grana e ainda ajudei o meio ambiente! 🌱"</p>
+
+                <div>
+                    <img class="simboloDepoimento" src="./icons/depoimento/heart-depoimento.png" alt="Símbolo de coração">
+                    <h5 class="nameUser">Ana Rita - Paraisópolis, SP</h5>
+                    <h5 class="descriptionUser">Adquirente</h5>
+                </div>
+            </div>
+
+            <div class="cardDepoimento">
+                <img src="./icons/depoimento/star.png" alt="Classificação de 5 estrelas">
+                <p>"Plataforma incrível!! O suporte do site é incrível, consegui doar meus dispositivos velhos e adquirir 1 notebook em ótimo estado! 👏"</p>
+                
+                <div>
+                    <img class="simboloDepoimento" src="./icons/depoimento/recicla-depoimento.png" alt="Símbolo de reciclagem">
+                    <h5 class="nameUser">Luiz Augusto - Grajaú, RJ</h5>
+                    <h5 class="descriptionUser">Usuária ativa</h5>
+                </div>
+            </div>
+        </article>
+    </section>
 
     <!-- Bann -->
-    <banner id="começarAgora"></banner>
+    <banner id="começarAgora">
+        <h2>Pronto para fazer a diferença?</h2>
+        <h3>Junte-se à nossa comunidade e ajude a criar um mundo mais sustentável, um eletrônico de cada vez!</h3>
+
+        <div>
+            <button id="btnComeçarAgora">Começar Agora</button>
+            <button id="btnSaberMais">Saber Mais</button>
+        </div>
+    </banner>
 
     <!-- Footer, com informações de contato -->
-    <footer id="contato"></footer>
+    <footer id="contato">
+        <article>
+            <div>
+                <img src="./icons/header/logo.png">
+                <p>ReciclaTech</p>
+            </div>
+            <p>Conectando pessoas através da sustentabilidade e tecnologia.</p>
+        </article>
+        <article>
+            <p>Links Rápidos</p>
+            <span>
+                <ul>
+                    <li>Como Funciona</li>
+                    <li>Doar</li>
+                    <li>Adquirir</li>
+                    <li>Contato</li>
+                </ul>
+            </span>
+        </article>
+        <article>
+            <p>Suporte</p>
+            <ul>
+                <li>FAQ</li>
+                <li>Termos de Uso</li>
+                <li>Privacidade</li>
+                <li>Ajuda</li>
+            </ul>
+        </article>
+        <hr>
+        <span>
+            <p>© 2025 ReciclaTech. Todos os direitos reservados. Feito com 💚 para um mundo melhor por Gabriel S. Ganiku</p>
+        </span>
+    </footer>
 </body>
 </html>
