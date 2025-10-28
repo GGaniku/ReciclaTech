@@ -92,7 +92,6 @@ header nav a {
   color: #4B5563;
 }
 header nav #btnComeçarAgora {
-  padding: 10px 30px;
   background-color: var(--btn-primary-color);
   color: #FFFFFF;
   padding: 20px 30px;
@@ -114,10 +113,9 @@ hr {
 #hero {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
   width: 100vw;
-  padding: 5rem;
+  padding: 5rem 3rem;
 }
 #hero h1 {
   font-size: 60px;
@@ -128,8 +126,8 @@ hr {
 }
 #hero .mainImgHero {
   display: inline-block;
-  height: 424px;
-  width: 410.17px;
+  height: 10rem;
+  width: 10rem;
 }
 #hero button {
   display: flex;
@@ -408,4 +406,69 @@ hr {
   background-color: #e9f2e8;
   font-family: var(--font-size-h1-h2);
   width: auto;
+}
+
+#depoimentos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4rem;
+  width: 100vw;
+  background-color: var(--backgroung-box);
+}
+#depoimentos .iconStars {
+  width: 7.5rem;
+}
+#depoimentos h2, #depoimentos h3 {
+  display: flex;
+  justify-content: center;
+}
+#depoimentos #conjuntoCardsDepoimentos {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+#depoimentos .cardDepoimento {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #9CA3AF;
+  border-left: solid 4px #9CA3AF;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 2rem 2.5rem;
+  gap: 1rem;
+  width: 21rem;
+  height: auto;
+}
+#depoimentos p {
+  color: var(--subtitle);
+}
+#depoimentos h5 {
+  font-family: var(--font-p-h1-h2);
+  font-size: var(--font-size-h5);
+  font-weight: normal;
+}
+#depoimentos .iconeDepoimento {
+  width: 2.5rem;
+  height: 2.5rem;
+  align-self: center;
+}
+#depoimentos .infoUser {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+#depoimentos .infoUser span {
+  display: flex;
+  flex-direction: column;
+}
+#depoimentos .infoUser span .nameUser {
+  color: var(--title);
+  font-weight: bolder;
+}
+#depoimentos .infoUser span .descriptionUser {
+  color: var(--subtitle);
 }/*# sourceMappingURL=style.css.map */
