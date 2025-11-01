@@ -602,4 +602,24 @@ hr {
   flex-direction: row;
   padding-top: 1.5rem;
   gap: 1rem;
+}
+
+@media (max-width: 425px) {
+  header {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  footer #conjuntoCardsFooter {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer #conjuntoCardsFooter h4, footer #conjuntoCardsFooter p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

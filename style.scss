@@ -741,3 +741,32 @@ hr {
     gap: 1rem;
   }
 }
+
+// Media Queries
+
+// Mobile large screens
+
+@media (max-width: 425px) {
+    header {
+        flex-wrap: wrap;
+        height: auto; // para tentar arrumar a barra em branco que fica à direita da tela
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    footer {
+        #conjuntoCardsFooter {
+            flex-direction: column;
+            flex-wrap: wrap;
+            h4, p {
+                text-align: center;
+            }
+        }
+    }
+    
+}
