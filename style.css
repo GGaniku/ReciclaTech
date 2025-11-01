@@ -6,16 +6,16 @@
 }
 
 :root {
-  --btn-primary-color: #16A34A;
-  --btn-secondary-color: #2563EB;
-  --title: #1F2937;
-  --subtitle: #4B5563;
-  --backgroung-box: #F3F5F8;
-  --background: #F0FDF4;
+  --btn-primary-color: #16a34a;
+  --btn-secondary-color: #2563eb;
+  --title: #1f2937;
+  --subtitle: #4b5563;
+  --backgroung-box: #f3f5f8;
+  --background: #f0fdf4;
   --font-p-h1-h2: "Poppins", sans-serif;
   --font-h3--h5: "Inter", sans-serif;
   --font-size-p: 16px;
-  --font-size-h1-h2:40px;
+  --font-size-h1-h2: 40px;
   --font-size-h3: 25px;
   --font-size-h4: 20px;
   --font-size-h5: 14px;
@@ -92,27 +92,27 @@ header nav a {
   text-decoration: none;
   font-family: var(--font-p-h1-h2);
   font-size: var(--font-size-p);
-  color: #4B5563;
+  color: #4b5563;
 }
 header nav a:hover {
-  color: #16A34A;
+  color: #16a34a;
 }
 header nav #btnComeçarAgora {
   background-color: var(--btn-primary-color);
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 20px 30px;
   border: solid 1px var(--btn-primary-color);
   border-radius: 6px;
 }
 header nav #btnComeçarAgora:hover {
-  background-color: #21C05C;
-  border: solid 1px #21C05C;
+  background-color: #21c05c;
+  border: solid 1px #21c05c;
 }
 
 hr {
   border: none;
   height: 1px;
-  background-color: #B4AEAE;
+  background-color: #b4aeae;
   margin: 1rem 2rem;
 }
 
@@ -163,17 +163,17 @@ hr {
   background-color: var(--btn-primary-color);
   border: solid 1px var(--btn-primary-color);
   border-radius: 6px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 #hero #btnDoar:hover {
-  background-color: #21C05C;
-  border: solid 1px #21C05C;
+  background-color: #21c05c;
+  border: solid 1px #21c05c;
 }
 #hero #btnAdquirir {
   font-family: var(--font-p-h1-h2);
   font-size: var(--font-size-p);
   padding: 1rem 2rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: solid 1px var(--btn-secondary-color);
   border-radius: 6px;
   color: var(--btn-secondary-color);
@@ -263,7 +263,7 @@ hr {
   color: var(--subtitle);
 }
 #comoFunciona .cardComoFunciona ol li strong {
-  color: #09090B;
+  color: #09090b;
 }
 #comoFunciona #titleDoadoresCard h3 {
   color: var(--btn-primary-color);
@@ -292,13 +292,13 @@ hr {
   font-size: var(--font-size-h5);
   font-weight: 300;
   background-color: var(--btn-primary-color);
-  color: #FFFFFF;
+  color: #ffffff;
   border: solid 1px var(--btn-primary-color);
   border-radius: 6px;
 }
 #adquirir button:hover {
-  background-color: #21C05C;
-  border: solid 1px #21C05C;
+  background-color: #21c05c;
+  border: solid 1px #21c05c;
 }
 #adquirir #titleSubtitleAdquirir {
   display: flex;
@@ -318,7 +318,7 @@ hr {
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 295px;
   border: solid var(--btn-primary-color) 2px;
   border-radius: 8px;
@@ -387,13 +387,13 @@ hr {
   font-size: var(--font-size-p);
   font-style: normal;
   background-color: var(--btn-primary-color);
-  color: #FFFFFF;
+  color: #ffffff;
   border: solid 1px var(--btn-primary-color);
   border-radius: 6px;
 }
 #formulario #btnCadastro:hover {
-  background-color: #21C05C;
-  border: 1px #21C05C;
+  background-color: #21c05c;
+  border: 1px #21c05c;
 }
 #formulario #btnReset {
   width: 10rem;
@@ -402,15 +402,15 @@ hr {
   font-family: var(--font-p-h1-h2);
   font-size: var(--font-size-p);
   font-style: italic;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: rgb(187, 2, 2);
   border: solid 1px rgb(187, 2, 2);
   border-radius: 6px;
 }
 #formulario #btnReset:hover {
   background-color: rgb(255, 92, 92);
-  border: 1px #FFFFFF;
-  color: #FFFFFF;
+  border: 1px #ffffff;
+  color: #ffffff;
 }
 #formulario #botoesForm {
   display: flex;
@@ -418,7 +418,10 @@ hr {
   gap: 3rem;
   padding-top: 1rem;
 }
-#formulario input, #formulario select, #formulario option, #formulario #tipo {
+#formulario input,
+#formulario select,
+#formulario option,
+#formulario #tipo {
   border: none;
   border-bottom: #999a9b 1px solid;
   background-color: #e9f2e8;
@@ -440,7 +443,8 @@ hr {
 #depoimentos .iconStars {
   width: 7.5rem;
 }
-#depoimentos h2, #depoimentos h3 {
+#depoimentos h2,
+#depoimentos h3 {
   display: flex;
   justify-content: center;
 }
@@ -455,9 +459,9 @@ hr {
 #depoimentos .cardDepoimento {
   display: flex;
   flex-direction: column;
-  border: solid 1px #9CA3AF;
-  border-left: solid 4px #9CA3AF;
-  background-color: #FFFFFF;
+  border: solid 1px #9ca3af;
+  border-left: solid 4px #9ca3af;
+  background-color: #ffffff;
   border-radius: 8px;
   padding: 2rem 2.5rem;
   gap: 1rem;
@@ -516,20 +520,20 @@ hr {
   font-size: var(--font-size-p);
   font-weight: 300;
   background-color: var(--btn-primary-color);
-  color: #FFFFFF;
+  color: #ffffff;
   border: solid 1px var(--btn-primary-color);
   border-radius: 6px;
 }
 #começarAgora #btnComeçarAgora:hover {
-  background-color: #21C05C;
-  border: solid 1px #21C05C;
+  background-color: #21c05c;
+  border: solid 1px #21c05c;
 }
 #começarAgora #btnSaberMais {
   padding: 10px 30px;
   font-family: var(--font-p-h1-h2);
   font-size: var(--font-size-p);
   font-weight: 300;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: var(--btn-primary-color);
   border: solid 1px var(--btn-primary-color);
   border-radius: 6px;
@@ -547,7 +551,7 @@ hr {
   display: flex;
   flex-direction: column;
   background-color: var(--title);
-  color: #9CA3AF;
+  color: #9ca3af;
 }
 #contato #logoFooter {
   display: flex;
@@ -555,7 +559,7 @@ hr {
   padding-bottom: 1.5rem;
 }
 #contato #logoFooter h4 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
 }
 #contato #conjuntoCardsFooter {
@@ -570,7 +574,7 @@ hr {
   width: 15rem;
 }
 #contato .cardFooter .titleFooter {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   padding-bottom: 1.5rem;
 }
@@ -586,7 +590,7 @@ hr {
 }
 #contato a {
   text-decoration: none;
-  color: #9CA3AF;
+  color: #9ca3af;
 }
 #contato span {
   display: flex;

@@ -1,745 +1,743 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    // Cores
-    --btn-primary-color: #16A34A;
-    --btn-secondary-color: #2563EB;
-    --title: #1F2937;
-    --subtitle: #4B5563;
-    --backgroung-box: #F3F5F8;
-    --background: #F0FDF4;
+:root {
+  // Cores
+  --btn-primary-color: #16a34a;
+  --btn-secondary-color: #2563eb;
+  --title: #1f2937;
+  --subtitle: #4b5563;
+  --backgroung-box: #f3f5f8;
+  --background: #f0fdf4;
 
-    // Fontes
+  // Fontes
 
-    // Nome e tipo da fonte
-    --font-p-h1-h2: 'Poppins', sans-serif;
-    --font-h3--h5: 'Inter', sans-serif;
+  // Nome e tipo da fonte
+  --font-p-h1-h2: "Poppins", sans-serif;
+  --font-h3--h5: "Inter", sans-serif;
 
-    // Tamanho da fonte
-    --font-size-p: 16px;
-    --font-size-h1-h2:40px;
-    --font-size-h3: 25px;
-    --font-size-h4: 20px;
-    --font-size-h5: 14px;
+  // Tamanho da fonte
+  --font-size-p: 16px;
+  --font-size-h1-h2: 40px;
+  --font-size-h3: 25px;
+  --font-size-h4: 20px;
+  --font-size-h5: 14px;
 }
 
 //Padrão de tamanho de fonte
 body {
-    h1{
-        font-family: var(--font-p-h1-h2);
-        font-size: 60px;
-        line-height: 130%;
-        color: var(--title);
-    }
+  h1 {
+    font-family: var(--font-p-h1-h2);
+    font-size: 60px;
+    line-height: 130%;
+    color: var(--title);
+  }
 
-    h2 {
-        font-family: var(--font-p-h1-h2);
-        font-size: var(--font-size-h1-h2);
-        font-weight: bold;
-        color: var(--title);
-    }
+  h2 {
+    font-family: var(--font-p-h1-h2);
+    font-size: var(--font-size-h1-h2);
+    font-weight: bold;
+    color: var(--title);
+  }
 
-    h3 {
-        font-family: var(--font-h3--h5);
-        font-size: var(--font-size-h3);
-        font-weight: normal;
-        color: var(--subtitle);
-    }
+  h3 {
+    font-family: var(--font-h3--h5);
+    font-size: var(--font-size-h3);
+    font-weight: normal;
+    color: var(--subtitle);
+  }
 
-    h4 {
-        font-family: var(--font-h3--h5);
-        font-size: var(--font-size-h4);
-        font-weight: 400;
-    }
+  h4 {
+    font-family: var(--font-h3--h5);
+    font-size: var(--font-size-h4);
+    font-weight: 400;
+  }
 
-    p {
-        font-family: var(--font-p-h1-h2);
-        font-size: var(--font-size-p);
-    }
+  p {
+    font-family: var(--font-p-h1-h2);
+    font-size: var(--font-size-p);
+  }
 
-    button {
-        cursor: pointer;
-    }
+  button {
+    cursor: pointer;
+  }
 }
 
 // Header
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 3.75rem;
+  padding: 4rem 2rem 2.3rem 2rem;
+
+  // Caixa do logo como um todo
+  .logo {
+    height: 8.5vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    height: 3.75rem;
-    padding: 4rem 2rem 2.3rem 2rem;
+    gap: 10px;
 
-    // Caixa do logo como um todo
-    .logo {
-        height: 8.5vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 10px;
-
-        // Logo da Recicla Tech
-        img {
-            height: 36px;
-            width: 36px;
-        }
-
-        //  Escrita do logo da Recicla Tech
-        span {
-            font-family: var(--font-p-h1-h2);
-            font-weight: bold;
-            font-size: 31.76px;
-            color: var(--title);
-            height: 42.3px;
-            font-size: 31.76px;
-            align-items: center;
-        }
+    // Logo da Recicla Tech
+    img {
+      height: 36px;
+      width: 36px;
     }
 
-    // Menu de navegação
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        text-align: center;
-        text-wrap: nowrap;
-        gap: 33px;
-        
-        a {
-            text-decoration: none;
-            font-family: var(--font-p-h1-h2);
-            font-size: var(--font-size-p);
-            color: #4B5563;
-
-            &:hover {
-                color: #16A34A;
-            }
-        }
-
-        #btnComeçarAgora {
-            background-color: var(--btn-primary-color);
-            color: #FFFFFF;
-            padding: 20px 30px; // Top/bottom e left/right
-            border: solid 1px var(--btn-primary-color);
-            border-radius: 6px;
-
-            &:hover {
-                background-color: #21C05C;
-                border: solid 1px #21C05C
-            }
-        }
+    //  Escrita do logo da Recicla Tech
+    span {
+      font-family: var(--font-p-h1-h2);
+      font-weight: bold;
+      font-size: 31.76px;
+      color: var(--title);
+      height: 42.3px;
+      font-size: 31.76px;
+      align-items: center;
     }
+  }
+
+  // Menu de navegação
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    text-wrap: nowrap;
+    gap: 33px;
+
+    a {
+      text-decoration: none;
+      font-family: var(--font-p-h1-h2);
+      font-size: var(--font-size-p);
+      color: #4b5563;
+
+      &:hover {
+        color: #16a34a;
+      }
+    }
+
+    #btnComeçarAgora {
+      background-color: var(--btn-primary-color);
+      color: #ffffff;
+      padding: 20px 30px; // Top/bottom e left/right
+      border: solid 1px var(--btn-primary-color);
+      border-radius: 6px;
+
+      &:hover {
+        background-color: #21c05c;
+        border: solid 1px #21c05c;
+      }
+    }
+  }
 }
 
 // Divisória de sections
 hr {
-    border: none;
-    height: 1px;
-    background-color: #B4AEAE;
-    margin: 1rem 2rem;
+  border: none;
+  height: 1px;
+  background-color: #b4aeae;
+  margin: 1rem 2rem;
 }
 
 // Section Hero
 #hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 5rem 3rem;
+
+  // Texto principal
+  h1 {
+    font-size: 60px;
+    line-height: 130%;
+  }
+
+  // Texto secundário/legenda
+  h4 {
+    color: var(--subtitle);
+  }
+
+  // Imagem principal da section
+  .mainImgHero {
+    display: inline-block;
+    height: 10rem;
+    width: 10rem;
+  }
+
+  // Botões da section
+  button {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    padding: 5rem 3rem; 
+    gap: 10px;
 
-    // Texto principal
-    h1 {
-        font-size: 60px;
-        line-height: 130%;
+    img {
+      height: 24px;
+      width: 24px;
     }
+  }
 
-    // Texto secundário/legenda
-    h4 {
-        color: var(--subtitle);
+  .textoBtnHero {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .btnsHero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row nowrap;
+    width: 35vw;
+  }
+
+  // Botão 'Quero Doar'
+  #btnDoar {
+    font-family: var(--font-p-h1-h2);
+    font-size: var(--font-size-p);
+    padding: 1rem 2rem;
+    background-color: var(--btn-primary-color);
+    border: solid 1px var(--btn-primary-color);
+    border-radius: 6px;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #21c05c;
+      border: solid 1px #21c05c;
     }
+  }
 
-    // Imagem principal da section
-    .mainImgHero {
-        display: inline-block;
-        height: 10rem;
-        width: 10rem;
+  // Botão 'Quero Adquirir'
+  #btnAdquirir {
+    font-family: var(--font-p-h1-h2);
+    font-size: var(--font-size-p);
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border: solid 1px var(--btn-secondary-color);
+    border-radius: 6px;
+    color: var(--btn-secondary-color);
+
+    &:hover {
+      font-style: italic;
+      text-decoration: underline;
     }
+  }
 
-    // Botões da section
-    button {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-
-        img {
-            height: 24px;
-            width: 24px;
-        }
-    }
-
-    .textoBtnHero {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .btnsHero {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row nowrap;
-        width: 35vw;
-    }
-
-    // Botão 'Quero Doar'
-    #btnDoar {
-        font-family: var(--font-p-h1-h2);
-        font-size: var(--font-size-p);
-        padding: 1rem 2rem;
-        background-color: var(--btn-primary-color);
-        border: solid 1px var(--btn-primary-color);
-        border-radius: 6px;
-        color: #FFFFFF;
-
-        &:hover {
-            background-color: #21C05C;
-            border: solid 1px #21C05C;
-        }
-    }
-
-    // Botão 'Quero Adquirir'
-    #btnAdquirir {
-        font-family: var(--font-p-h1-h2);
-        font-size: var(--font-size-p);
-        padding: 1rem 2rem;
-        background-color: #FFFFFF;
-        border: solid 1px var(--btn-secondary-color);
-        border-radius: 6px;
-        color: var(--btn-secondary-color);
-
-        &:hover {
-            font-style: italic;
-            text-decoration: underline;
-        }
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 // Banner com dados estatísticos
 #dados {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100vw;
+  padding: 5vh 7vw;
+  background-color: var(--backgroung-box);
+
+  // Cada caixa de dado estatístico
+  span {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100vw;
-    padding: 5vh 7vw;
-    background-color: var(--backgroung-box);
+    flex-direction: column;
+    align-items: center;
+  }
 
-    // Cada caixa de dado estatístico
-    span {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  // Dado estatístico
+  h2 {
+    font-family: var(--font-p-h1-h2);
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--btn-primary-color);
+  }
 
-    // Dado estatístico
-    h2 {
-        font-family: var(--font-p-h1-h2);
-        font-size: 40px;
-        font-weight: bold;
-        color: var(--btn-primary-color);
-    }
-
-    // Legenda do dado estatístico
-    p {
-        font-family: var(--font-p-h1-h2);
-        font-size: var(--font-size-p);
-        color: var(--subtitle);
-    }
+  // Legenda do dado estatístico
+  p {
+    font-family: var(--font-p-h1-h2);
+    font-size: var(--font-size-p);
+    color: var(--subtitle);
+  }
 }
 
 // Section Como Funciona?
 #comoFunciona {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 5rem;
+
+  // Conjunto título e subtítulo da section
+  span {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    padding: 5rem;
+    gap: 1.5rem;
+    padding-bottom: 4rem;
+  }
 
-    // Conjunto título e subtítulo da section 
-    span {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        padding-bottom: 4rem;
+  // Subtítulo da section
+  h3 {
+    color: var(--title);
+  }
+
+  //// Estilo dos Cards da section
+
+  .conjuntoCardsComoFunciona {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  // Padrão para Cards da section 'como-funciona'
+
+  .cardComoFunciona {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    background-color: var(--backgroung-box);
+    border-radius: 8px;
+    padding: 2rem;
+    height: 481px;
+    width: 491px;
+
+    // Padrão para títulos dos cards
+    .titleCardComoFunciona {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 8px;
     }
 
-    // Subtítulo da section
+    // Padrão Card do parágrafo/subtítulo
+    p {
+      color: var(--subtitle);
+    }
+
+    // Padrão Card da lista numérica
+    ol {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      // list-style-image: url(./icons/como-funciona/itens/verde.png);
+
+      li {
+        font-family: var(--font-p-h1-h2);
+        font-size: var(--font-size-p);
+        color: var(--subtitle);
+
+        strong {
+          color: #09090b;
+        }
+      }
+    }
+  }
+
+  /// Especificidades de cada Card:
+
+  // Título card 'Para Doadores'
+  #titleDoadoresCard {
     h3 {
-        color: var(--title);
+      color: var(--btn-primary-color);
     }
+  }
 
-    //// Estilo dos Cards da section
-
-    .conjuntoCardsComoFunciona {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 2rem;
+  // Título card 'Para Adquirentes'
+  #titleAdquirentesCard {
+    h3 {
+      color: var(--btn-secondary-color);
     }
-
-    // Padrão para Cards da section 'como-funciona'
-
-    .cardComoFunciona {
-        display: flex;
-        flex-direction: column;
-        gap: 1.8rem;
-        background-color: var(--backgroung-box);
-        border-radius: 8px;
-        padding: 2rem;
-        height: 481px;
-        width: 491px;
-
-        // Padrão para títulos dos cards
-        .titleCardComoFunciona {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 8px;
-        }
-
-        // Padrão Card do parágrafo/subtítulo
-        p {
-            color: var(--subtitle);
-        }
-
-        // Padrão Card da lista numérica
-        ol {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            // list-style-image: url(./icons/como-funciona/itens/verde.png);
-
-            li {
-                font-family: var(--font-p-h1-h2);
-                font-size: var(--font-size-p);
-                color: var(--subtitle);
-
-                strong {
-                    color: #09090B;
-                }
-            }
-        }
-    }
-
-    /// Especificidades de cada Card:
-
-    // Título card 'Para Doadores'
-    #titleDoadoresCard {
-        h3 {
-            color: var(--btn-primary-color);
-        }
-    }
-
-    // Título card 'Para Adquirentes'
-    #titleAdquirentesCard {
-        h3 {
-            color: var(--btn-secondary-color);
-        }
-    }
+  }
 }
 
 // Section para Adquirir os produtos
 #adquirir {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 5rem;
+  background-color: var(--backgroung-box);
+
+  h3 {
+    color: var(--subtitle);
+  }
+
+  img {
+    width: 100%;
+    height: 234px;
+  }
+
+  button {
+    padding: 10px 30px;
+    font-family: var(--font-h3--h5);
+    font-size: var(--font-size-h5);
+    font-weight: 300;
+    background-color: var(--btn-primary-color);
+    color: #ffffff;
+    border: solid 1px var(--btn-primary-color);
+    border-radius: 6px;
+
+    &:hover {
+      background-color: #21c05c;
+      border: solid 1px #21c05c;
+    }
+  }
+
+  #titleSubtitleAdquirir {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    padding: 5rem;
-    background-color: var(--backgroung-box);
+    gap: 1.5rem;
+    padding-bottom: 4rem;
+  }
 
-    h3 {
-        color: var(--subtitle);
+  #allCardsAdquirir {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .cardAdquirir {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    background-color: #ffffff;
+    width: 295px;
+    border: solid var(--btn-primary-color) 2px;
+    border-radius: 8px;
+    padding-bottom: 2rem;
+
+    p {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      color: var(--subtitle);
     }
+  }
 
-    img {
-        width: 100%;
-        height: 234px;
-    }
-
-    button {
-        padding: 10px 30px;
-        font-family: var(--font-h3--h5);
-        font-size: var(--font-size-h5);
-        font-weight: 300;
-        background-color: var(--btn-primary-color);
-        color: #FFFFFF;
-        border: solid 1px var(--btn-primary-color);
-        border-radius: 6px;
-
-        &:hover {
-            background-color: #21C05C;
-            border: solid 1px #21C05C;
-        }
-    }
-
-    #titleSubtitleAdquirir {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        padding-bottom: 4rem;
-    }
-
-    #allCardsAdquirir {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 2rem;
-
-    }
-
-    .cardAdquirir {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 1rem;
-        background-color: #FFFFFF;
-        width: 295px;
-        border: solid var(--btn-primary-color) 2px;
-        border-radius: 8px;
-        padding-bottom: 2rem;
-
-
-        p {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            color: var(--subtitle);
-        }
-    }
-    
-    .cardNomeLegenda {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        padding: 0 0.5rem
-    }
+  .cardNomeLegenda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
 }
 
 // Section Formulário
 #formulario {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  gap: 1.5rem;
+  width: 100vw;
+
+  form {
     display: flex;
     flex-direction: column;
-    padding: 5rem;
-    gap: 1.5rem;
-    width: 100vw;
+    gap: 1rem;
+  }
 
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+  h3 {
+    color: var(--title);
+  }
+
+  .formContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font-p-h1-h2);
+    font-size: var(--font-size-p);
+    padding-top: 1rem;
+  }
+
+  legend {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  div {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    border: solid 1px var(--btn-primary-color);
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: #e9f2e8;
+  }
+
+  #btnCadastro {
+    width: 10rem;
+    align-self: center;
+    padding: 10px 30px;
+    font-family: var(--font-p-h1-h2);
+    font-size: var(--font-size-p);
+    font-style: normal;
+    background-color: var(--btn-primary-color);
+    color: #ffffff;
+    border: solid 1px var(--btn-primary-color);
+    border-radius: 6px;
+
+    &:hover {
+      background-color: #21c05c;
+      border: 1px #21c05c;
     }
+  }
 
-    h3 {
-        color: var(--title);
+  #btnReset {
+    width: 10rem;
+    align-self: center;
+    padding: 10px 30px;
+    font-family: var(--font-p-h1-h2);
+    font-size: var(--font-size-p);
+    font-style: italic;
+    background-color: #ffffff;
+    color: rgb(187, 2, 2);
+    border: solid 1px rgb(187, 2, 2);
+    border-radius: 6px;
+
+    &:hover {
+      background-color: rgb(255, 92, 92);
+      border: 1px #ffffff;
+      color: #ffffff;
     }
+  }
 
-    .formContainer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1rem;
-        border: none;
-        border-radius: 8px;
-        font-family: var(--font-p-h1-h2);
-        font-size: var(--font-size-p);
-        padding-top: 1rem;
-    }
+  #botoesForm {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 1rem;
+  }
 
-    legend {
-        font-weight: bold;
-        font-size: 20px;
+  input,
+  select,
+  option,
+  #tipo {
+    border: none;
+    border-bottom: #999a9b 1px solid;
+    background-color: #e9f2e8;
+    font-family: var(--font-size-h1-h2);
+    width: auto;
+  }
 
-    }
-
-    div {
-        display: flex;
-        gap: 0.5rem;
-        flex-direction: row;
-        align-items: center;
-        border: solid 1px var(--btn-primary-color);
-        border-radius: 5px;
-        padding: 0.5rem;
-        background-color:#e9f2e8;
-    }
-
-    #btnCadastro {
-        width: 10rem;
-        align-self: center;
-        padding: 10px 30px;
-        font-family: var(--font-p-h1-h2);
-        font-size: var(--font-size-p);
-        font-style: normal;
-        background-color: var(--btn-primary-color);
-        color: #FFFFFF;
-        border: solid 1px var(--btn-primary-color);
-        border-radius: 6px;
-
-        &:hover {
-            background-color: #21C05C;
-            border: 1px #21C05C;
-        }
-    }
-
-    #btnReset {
-        width: 10rem;
-        align-self: center;
-        padding: 10px 30px;
-        font-family: var(--font-p-h1-h2);
-        font-size: var(--font-size-p);
-        font-style: italic;
-        background-color: #FFFFFF;
-        color: rgb(187, 2, 2);
-        border: solid 1px rgb(187, 2, 2);
-        border-radius: 6px;
-
-        &:hover {
-            background-color: rgb(255, 92, 92);
-            border: 1px #FFFFFF;
-            color: #FFFFFF;
-        }
-    }
-
-    #botoesForm {
-        display: flex;
-        justify-content: center;
-        gap: 3rem;
-        padding-top: 1rem;
-    }
-
-    input, select, option, #tipo {
-        border: none;
-        border-bottom: #999a9b 1px solid;
-        background-color: #e9f2e8;
-        font-family: var(--font-size-h1-h2);
-        width: auto;
-    }
-
-    #imagens {
-        color: var(--subtitle);
-        ;
-    }
+  #imagens {
+    color: var(--subtitle);
+  }
 }
 
 // Section Depoimentos
 #depoimentos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4rem;
+  width: 100vw;
+  background-color: var(--backgroung-box);
+
+  .iconStars {
+    width: 7.5rem;
+  }
+
+  h2,
+  h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  #conjuntoCardsDepoimentos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 4rem;
+  }
+
+  .cardDepoimento {
     display: flex;
     flex-direction: column;
+    border: solid 1px #9ca3af;
+    border-left: solid 4px #9ca3af;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem 2.5rem;
     gap: 1rem;
-    padding: 4rem;
-    width: 100vw;
-    background-color: var(--backgroung-box);
+    width: 22.5rem;
+    height: auto;
+  }
 
-    .iconStars {
-        width: 7.5rem;
-    }
+  p {
+    color: var(--subtitle);
+  }
 
-    h2, h3 {
-        display: flex;
-        justify-content: center;
-    }
+  h5 {
+    font-family: var(--font-p-h1-h2);
+    font-size: var(--font-size-h5);
+    font-weight: normal;
+  }
 
-    #conjuntoCardsDepoimentos {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 2rem;
-        padding-top: 4rem;
-    }
+  .iconeDepoimento {
+    width: 2.5rem;
+    height: 2.5rem;
+    align-self: center;
+  }
 
-    .cardDepoimento {
-        display: flex;
-        flex-direction: column;
-        border: solid 1px #9CA3AF;
-        border-left: solid 4px #9CA3AF;
-        background-color: #FFFFFF;
-        border-radius: 8px;
-        padding: 2rem 2.5rem;
-        gap: 1rem;
-        width: 22.5rem;
-        height: auto;
-    }
+  .infoUser {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem 0;
 
-    p {
+    span {
+      display: flex;
+      flex-direction: column;
+
+      .nameUser {
+        color: var(--title);
+        font-weight: bolder;
+      }
+
+      .descriptionUser {
         color: var(--subtitle);
+      }
     }
-
-    h5 {
-        font-family: var(--font-p-h1-h2);
-        font-size: var(--font-size-h5);
-        font-weight: normal;
-    }
-
-    .iconeDepoimento {
-        width: 2.5rem;
-        height: 2.5rem;
-        align-self: center;
-    }
-
-    .infoUser {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        padding: 1rem 0;
-        
-        span {
-            display: flex;
-            flex-direction: column;
-            
-            .nameUser {
-                color: var(--title);
-                font-weight: bolder;
-            
-            }
-
-            .descriptionUser {
-                color: var(--subtitle);
-            }
-        }
-        
-    }
+  }
 }
 
 // Banner convite para doar
 #começarAgora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 22.5rem;
+  gap: 1.5rem;
+  width: 100%;
+
+  h3 {
+    color: var(--title);
+  }
+
+  div {
+    padding-top: 1.5rem;
+  }
+
+  #btnComeçarAgora {
+    padding: 10px 30px;
+    font-family: var(--font-p-h1-h2);
+    font-size: var(--font-size-p);
+    font-weight: 300;
+    background-color: var(--btn-primary-color);
+    color: #ffffff;
+    border: solid 1px var(--btn-primary-color);
+    border-radius: 6px;
+
+    &:hover {
+      background-color: #21c05c;
+      border: solid 1px #21c05c;
+    }
+  }
+
+  #btnSaberMais {
+    padding: 10px 30px;
+    font-family: var(--font-p-h1-h2);
+    font-size: var(--font-size-p);
+    font-weight: 300;
+    background-color: #ffffff;
+    color: var(--btn-primary-color);
+    border: solid 1px var(--btn-primary-color);
+    border-radius: 6px;
+
+    &:hover {
+      font-style: italic;
+      text-decoration: underline;
+    }
+  }
+
+  div {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 5rem 22.5rem;
     gap: 1.5rem;
-    width: 100%;
-
-    h3 {
-        color: var(--title);
-    }
-
-    div {
-        padding-top: 1.5rem;
-    }
-
-    #btnComeçarAgora {
-        padding: 10px 30px;
-        font-family: var(--font-p-h1-h2);
-        font-size: var(--font-size-p);
-        font-weight: 300;
-        background-color: var(--btn-primary-color);
-        color: #FFFFFF;
-        border: solid 1px var(--btn-primary-color);
-        border-radius: 6px;
-
-        &:hover {
-            background-color: #21C05C;
-            border: solid 1px #21C05C;
-        }
-    }
-
-    #btnSaberMais {
-        padding: 10px 30px;
-        font-family: var(--font-p-h1-h2);
-        font-size: var(--font-size-p);
-        font-weight: 300;
-        background-color: #FFFFFF;
-        color: var(--btn-primary-color);
-        border: solid 1px var(--btn-primary-color);
-        border-radius: 6px;
-
-        &:hover {
-            font-style: italic;
-            text-decoration: underline;
-        }
-    }
-
-    div {
-        display: flex;
-        gap: 1.5rem;
-    }
+  }
 }
 
 // Footer
 #contato {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--title);
+  color: #9ca3af;
+
+  #logoFooter {
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 1.5rem;
+
+    h4 {
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+
+  #conjuntoCardsFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 5rem 2.5rem 1.5rem;
+    gap: 6rem;
+  }
+
+  .cardFooter {
     display: flex;
     flex-direction: column;
-    background-color: var(--title);
-    color: #9CA3AF;
-    
-    #logoFooter {
-        display: flex;
-        gap: 0.5rem;
-        padding-bottom: 1.5rem;
+    width: 15rem;
 
-        h4 {
-            color: #FFFFFF;
-            font-weight: bold;
-        }
+    .titleFooter {
+      color: #ffffff;
+      font-weight: bold;
+      padding-bottom: 1.5rem;
     }
+  }
 
-    #conjuntoCardsFooter {
-        display: flex;
-        justify-content: space-between;
-        padding: 2.5rem 5rem 2.5rem 1.5rem;
-        gap: 6rem;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    li {
+      font-family: var(--font-p-h1-h2);
+      font-size: var(--font-size-p);
+      list-style: none;
     }
+  }
 
-    .cardFooter {
-        display: flex;
-        flex-direction: column;
-        width: 15rem;
+  a {
+    text-decoration: none;
+    color: #9ca3af;
+  }
 
-        .titleFooter {
-            color: #FFFFFF;
-            font-weight: bold;
-            padding-bottom: 1.5rem;
-        }
-    }
+  span {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 2rem 0;
+  }
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-
-        li {
-            font-family: var(--font-p-h1-h2);
-            font-size: var(--font-size-p);
-            list-style: none;
-        }
-    }
-
-    a {
-        text-decoration: none;
-        color: #9CA3AF;
-    }
-
-    span {
-        display: flex;
-        justify-content: center;
-        padding: 1rem 0 2rem 0;
-    }
-
-    .redesSociaisFooter {
-        display: flex;
-        flex-direction: row;
-        padding-top: 1.5rem;
-        gap: 1rem;
-    }
+  .redesSociaisFooter {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5rem;
+    gap: 1rem;
+  }
 }
